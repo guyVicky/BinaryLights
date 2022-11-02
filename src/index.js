@@ -34,7 +34,7 @@ document.getElementById("app").innerHTML = `
 `;
 
 document.getElementById("b1").onclick = function () {
-  let st=Number(prompt("Enter binary form: ")).toString(2);
+  let st=Number(document.getElementById("num").textContent).toString(2);
   console.log(st)
   for (let i=0;i<6;i++) {
     let image = document.getElementById("bulb"+i);
